@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="init.js"></script>
+
+  <style>
+  * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 66.6%;
+}
+
+.div {
+  font-size: 4rem;
+}
+
+#EnterName {
+  font-size: 3rem;
+}
+
+input {
+  width: 30rem;
+  height: 3rem;
+}
+
+#Search {
+   background-color:#008CBA;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.inpdiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem;
+}
+
+
+
+
+
+
+.block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2rem;
+  border: 1px solid black;
+  margin: 1rem;
+  padding: 3rem;
+  cursor: pointer;
+}
+
+.flagimg{
+  width: 18rem;
+  margin: 2rem;
+}
+
+.goBack {
+  margin: 1rem;
+  padding: .6rem;
+  font-size: 1rem;
+  background-color: green;
+  color: white;
+  font-weight: 700;
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
+}
+body {background-color: powderblue;}
+
+.container {
+  height: 80vh;
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-around;  
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem;
+}
+  </style>
+<script src="get_country.js"></script>
+
+
+</head>
+<body >
+    <!-- To return back to the main page/UI_page1.html / -->
+    <button class = "goBack" onclick="goBack()">  Go back</button>
+ <!-- The area where the details of the country get displayed -->
+  <div class="container">
+
+  </div>
+  
+  
+</body>
+</html>

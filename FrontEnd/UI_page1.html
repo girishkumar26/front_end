@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!-- 1. The first page should have a search bar on top that should be used to search for any
+country by making an API call. You can use APIs from https://restcountries.eu/.
+2. The search results should be displayed on the same page as cards with the name and the
+flag of the country, without refreshing the web page
+3. On clicking a card, the app should redirect to a page that shows country details. Display
+sce fit
+all interesting details that are returned by the API. You are free to design this page as you
+4. The details page should have a link to go back to the previous page, where the scratch
+results were displayed. -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Country_name</title>
+
+<style>
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 66.6%;
+}
+
+.div {
+  font-size: 4rem;
+}
+
+#EnterName {
+  font-size: 3rem;
+}
+
+input {
+  width: 30rem;
+  height: 3rem;
+}
+
+#Search {
+   background-color:#008CBA;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.inpdiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem;
+}
+
+
+
+
+
+
+.block {
+  display: flex;
+  justify-content: center;
+  
+  align-items: center;
+  flex-direction: column;
+  font-size: 2rem;
+  border: 1px solid powderblue;
+  border-left: 6px solid red;
+  background-color: powderblue;
+  margin: 1rem;
+  padding: 3rem;
+  cursor: pointer;
+}
+
+.flagimg{
+  width: 18rem;
+  margin: 2rem;
+}
+
+.goBack {
+  margin: 1rem;
+  padding: .6rem;
+  font-size: 1rem;
+  background-color: green;
+  color: white;
+  font-weight: 700;
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
+}
+
+
+.container {
+  height: 80vh;
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-around;  
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem;
+}
+body {background-color: powderblue;}
+</style>
+<!-- to link the external javaScript file -->
+<script src="get_country.js"></script>
+
+</head>
+<body>
+
+  <div class="inpdiv ">
+  <!-- To get the inputs of the country Name from the User -->
+    <span id = "EnterName"> Enter The name of The country: </span>  <input id = "cname"type="text" placeholder = "Enter_country_name">
+  <!-- On click this button will call the search method which is defined to fetch the data from the API --> 
+   <button id = "Search" onclick="search()">Search</button>
+  </div>
+  
+  <!-- The area where the results get displayed -->
+  <div class="results">
+
+  </div>
+
+</body>
+</html>
